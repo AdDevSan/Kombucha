@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textStarterTea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Starter Tea"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Water"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textStarterTea"
+        app:layout_constraintTop_toBottomOf="@+id/inputStarterTea" />
+
+    <TextView
+        android:id="@+id/textTea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tea"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textStarterTea"
+        app:layout_constraintTop_toBottomOf="@+id/inputWater" />
+
+    <TextView
+        android:id="@+id/inputSugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textStarterTea"
+        app:layout_constraintTop_toBottomOf="@+id/inputTea" />
+
+    <EditText
+        android:id="@+id/inputStarterTea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="volume of starter (mL)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textStarterTea"
+        app:layout_constraintTop_toBottomOf="@+id/textStarterTea"
+        tools:text="250" />
+
+    <EditText
+        android:id="@+id/inputWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="volume of water (mL)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textWater"
+        app:layout_constraintTop_toBottomOf="@+id/textWater"
+        tools:text="1250" />
+
+    <EditText
+        android:id="@+id/inputTea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="tea amount (grams)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textTea"
+        app:layout_constraintTop_toBottomOf="@+id/textTea"
+        tools:text="1250" />
+
+    <EditText
+        android:id="@+id/inputWater3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="volume of sugar (mL)"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/inputSugar"
+        app:layout_constraintTop_toBottomOf="@+id/inputSugar"
+        tools:text="1250" />
+</androidx.constraintlayout.widget.ConstraintLayout>
